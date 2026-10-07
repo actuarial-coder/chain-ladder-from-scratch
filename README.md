@@ -10,14 +10,12 @@ From the [@actuarialcoder](https://www.instagram.com/actuarialcoder) 3-part seri
 ## Files
 | File | What it is |
 |------|-----------|
-| `claims_payments.csv` | Synthetic claim payments (1,939 rows, accident years 2019-2024, valued 31 Dec 2024) |
+| `claims_payments.csv` | Raw claim payments (1,939 rows, accident years 2019-2024, valued 31 Dec 2024). Synthetic data. |
 | `chain_ladder.py` | Python version (needs pandas, numpy) |
 | `chain_ladder.R` | R version (base R only) |
-| `make_data.py` | How the synthetic data was generated (run it to recreate `claims_payments.csv`) |
 
 ## Run
 ```
-python make_data.py      # only if claims_payments.csv is missing
 python chain_ladder.py
 Rscript chain_ladder.R
 ```
